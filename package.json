@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "auth0-s2s-spike",
   "main": "index.js",
-  "scripts": {
-    "dev": ""
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/macklin-hartley-vgw/auth0-s2s-spike.git"
@@ -19,5 +16,27 @@
   "bugs": {
     "url": "https://github.com/macklin-hartley-vgw/auth0-s2s-spike/issues"
   },
-  "homepage": "https://github.com/macklin-hartley-vgw/auth0-s2s-spike#readme"
+  "homepage": "https://github.com/macklin-hartley-vgw/auth0-s2s-spike#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-jwt-authz": "^1.0.0",
+    "jwks-rsa": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "watch": [
+      "./"
+    ],
+    "ignore": [
+      "node_modules"
+    ],
+    "exec": "node ./index.js"
+  },
+  "scripts": {
+    "dev": "nodemon"
+  }
 }
