@@ -9,6 +9,18 @@ app.get('/hello', (req, res) => {
   res.json('Hello world!')
 })
 
+app.use(jwt({
+  secret: jwksRsa.expressJwtSecret({
+    cache: true,
+    rateLimit: true,
+    jwksRequestsPerMinute: 5,
+    jwksUri: "https://vgw-payments-spike.auth0.com/.well-known/jwks.json"
+  }),
+  audience: 'test.local',
+  issuer: "https://vgw-payments-spike.auth0.com/",
+  algorithms: ['RS256']
+}))
+
 app.get('/authN', (req, res) => {
   res.json('This is top secret!')
 })
