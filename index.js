@@ -25,7 +25,7 @@ app.get('/authN', (req, res) => {
   res.json('This is top secret!')
 })
 
-app.get('/authZ', (req, res) => {
+app.get('/authZ', jwtAuthz([ 'read:secret' ]), (req, res) => {
   res.json('This is super top secret!')
 })
 
