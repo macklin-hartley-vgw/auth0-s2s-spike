@@ -1,0 +1,23 @@
+{
+  "name": "auth0-s2s-spike",
+  "version": "1.0.0",
+  "description": "auth0-s2s-spike",
+  "main": "index.js",
+  "scripts": {
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macklin-hartley-vgw/auth0-s2s-spike.git"
+  },
+  "keywords": [
+    "oauth",
+    "microservices"
+  ],
+  "author": "Macklin Hartley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/macklin-hartley-vgw/auth0-s2s-spike/issues"
+  },
+  "homepage": "https://github.com/macklin-hartley-vgw/auth0-s2s-spike#readme"
+}
